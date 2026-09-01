@@ -1,0 +1,47 @@
+# Example — Aquatic Mint Reference
+
+## ① Style DNA
+
+**Visual analysis**
+- Primary: luminous mint / seafoam green
+- Secondary: pale aqua and pearl-white highlights
+- Accent: a small amount of saturated blue
+- Brightness: high in the water field, with deep green shadow zones
+- Saturation: medium-low overall, localized blue accent
+- Temperature: cool
+- Light: refracted, rippled, translucent
+- Composition: large flowing field with a small central visual anchor
+- Mood: calm, floating, fresh, slightly surreal
+
+**Keywords**
+`Aquatic · Mint · Translucent · Floating · Serene · Sunlit`
+
+## ② Floral Design Concept
+
+**Name:** Tidal Mint / 薄荷潮汐
+
+A medium, airy, asymmetrical bouquet. Pale mint and white create the luminous water field, while a small amount of sky blue acts as the visual anchor. Transparent film and frosted mint wrapping carry the water-like quality so the flowers do not need unrealistic turquoise coloration.
+
+## ③ Flower BOM
+
+| 类别 | 花材名称 | 颜色 | 枝数/数量 | 角色/用途 | 是否染色 | 替代品种 |
+|---|---|---:|---:|---|---|---|
+| 主花 | 白蝴蝶兰 | 珍珠白 | 2枝 | 焦点花 / 高光 | 否 | 白蕙兰 |
+| 主花 | 白洋桔梗 | 白色 | 5枝 | 主体体量 | 否 | 白喷玫 |
+| 过渡花 | 浅绿洋桔梗 | 淡绿 | 3枝 | 薄荷色连接 | 否 | 绿色康乃馨 |
+| 主花 | 白玫瑰 | 奶白 | 5枝 | 稳定视觉中心 | 否 | 白庭园玫瑰 |
+| 线条花 | 蓝飞燕草 | 浅蓝 | 2枝 | 蓝色锚点 / 拉高线条 | 否 | 蓝绣球（局部） |
+| 叶材 | 尤加利 | 灰绿 | 5枝 | 冷调结构 | 否 | 银叶菊 |
+| 填充花 | 白色满天星 | 白 | 3枝 | 水面高光 / 空气感 | 否 | 白补血草 |
+| 线条材 | 轻盈观赏草 | 灰白 | 2枝 | 漂浮感 | 否 | 芦苇类线材 |
+
+**包装与辅材**
+- 半透明薄荷绿包装纸 × 2–3层
+- 透明高光膜 × 1–2层
+- 冰蓝色欧根纱 × 1层
+- 半透明蝴蝶装饰 × 2–3只（可选）
+- 浅水蓝丝带 × 1
+
+## ④ Image Generation Brief
+
+Generate a premium florist-portfolio still-life photograph of a medium-to-large airy asymmetrical bouquet inspired by luminous mint-green water. Use pearl-white, pale green, seafoam, and a restrained touch of soft sky blue. Feature realistic white phalaenopsis, white and pale-green lisianthus, white roses, sparse blue delphinium, eucalyptus, airy white filler, and fine line material. Keep generous negative space and layered depth. Use translucent mint wrapping, frosted paper, clear film, and a small amount of organza to evoke refracted water and sunlight. The bouquet must remain physically plausible and commercially buildable. Present it on a simple pedestal against a dark neutral background with elegant directional studio lighting and crisp botanical detail. Avoid fantasy flower species and avoid excessive turquoise-dyed flowers.

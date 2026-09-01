@@ -1,0 +1,14 @@
+interface:
+  display_name: floral art director
+  short_description: Use when a user provides a reference image and wants its visual
+    language, palette, mood, composition, or material qualities translated into a
+    realistic, buildable floral bouquet design.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

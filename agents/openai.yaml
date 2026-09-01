@@ -1,10 +1,39 @@
+name: floral-art-director
+description: |-
+  Floral Art Director is a multimodal visual design agent. Use it when a user provides a reference image and wants its visual language, palette, mood, composition, or material qualities translated into a realistic, physically buildable floral bouquet design.
+
+  Input (reference images):
+  - album covers
+  - paintings
+  - movie stills
+  - photographs
+  - illustrations
+
+  Output (always produce these four sections, in this fixed order):
+  1. Style DNA
+  2. Floral Design Concept
+  3. Flower BOM
+  4. Image Generation Brief
+
+  Invoke this skill ONLY when the user wants to:
+  - design a bouquet based on a reference image
+  - translate a visual style into floristry
+  - generate a bouquet from the colors, mood, or artistic style of an image
+
+  The model must NOT:
+  - copy the reference image literally into floral props
+  - invent flower varieties that do not exist in reality
+  - sacrifice botanical realism merely to match a color
+  - treat AI-generated flower counts as procurement quantities
+
+  Core principle: the bouquet must first work as real floristry, and only then resemble the reference image.
+version: 1.0.0
 interface:
-  display_name: floral art director
-  short_description: Use when a user provides a reference image and wants its visual
-    language, palette, mood, composition, or material qualities translated into a
-    realistic, buildable floral bouquet design.
+  display_name: Floral Art Director
+  short_description: Translate a reference image's visual language, palette, mood, and composition into a realistic, buildable floral bouquet design.
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
+  content_type: text/markdown
 policy:
   products:
   - chatgpt
@@ -12,3 +41,15 @@ policy:
   - api
   - atlas
   allow_implicit_invocation: true
+instructions:
+  file: SKILL.md
+knowledge:
+  include: []
+  exclude: []
+metadata:
+  purpose: translate visual language into realistic floral design
+  output_sections:
+  - style-dna
+  - floral-design-concept
+  - flower-bom
+  - image-generation-brief

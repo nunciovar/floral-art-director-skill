@@ -1,6 +1,10 @@
-# Example — Aquatic Mint Reference
+# Example 01 — Aquatic Mint
 
-## ① Style DNA
+## Reference Image
+
+A photograph of luminous mint-green water: refracted light rippling across a seafoam-to-pearl surface, deep green shadow zones near the edges, a small saturated blue anchor at the visual center, high brightness in the water field, low-to-medium saturation overall, cool temperature. Mood: calm, floating, fresh, slightly surreal.
+
+## ↓ Style DNA
 
 **Visual analysis**
 - Primary: luminous mint / seafoam green
@@ -16,13 +20,19 @@
 **Keywords**
 `Aquatic · Mint · Translucent · Floating · Serene · Sunlit`
 
-## ② Floral Design Concept
+## ↓ Floral Design Concept
 
 **Name:** Tidal Mint / 薄荷潮汐
 
-A medium, airy, asymmetrical bouquet. Pale mint and white create the luminous water field, while a small amount of sky blue acts as the visual anchor. Transparent film and frosted mint wrapping carry the water-like quality so the flowers do not need unrealistic turquoise coloration.
+A medium, airy, asymmetrical bouquet. Pale mint and white create the luminous water field, while a small amount of sky blue acts as the visual anchor. The water-like quality is carried by transparent film and frosted mint wrapping so the flowers do not need unrealistic turquoise coloration.
 
-## ③ Flower BOM
+- **Style:** airy, translucent, contemporary
+- **Size:** medium
+- **Silhouette:** loose, asymmetrical, generous negative space
+- **Density:** medium-low, breathing room throughout
+- **Design logic:** mint and pearl = the water field; a restrained sky-blue line = the image's focal anchor; transparent layers = refracted light
+
+## ↓ Flower BOM
 
 | 类别 | 花材名称 | 颜色 | 枝数/数量 | 角色/用途 | 是否染色 | 替代品种 |
 |---|---|---:|---:|---|---|---|
@@ -42,6 +52,6 @@ A medium, airy, asymmetrical bouquet. Pale mint and white create the luminous wa
 - 半透明蝴蝶装饰 × 2–3只（可选）
 - 浅水蓝丝带 × 1
 
-## ④ Image Generation Brief
+## ↓ Image Generation Brief
 
 Generate a premium florist-portfolio still-life photograph of a medium-to-large airy asymmetrical bouquet inspired by luminous mint-green water. Use pearl-white, pale green, seafoam, and a restrained touch of soft sky blue. Feature realistic white phalaenopsis, white and pale-green lisianthus, white roses, sparse blue delphinium, eucalyptus, airy white filler, and fine line material. Keep generous negative space and layered depth. Use translucent mint wrapping, frosted paper, clear film, and a small amount of organza to evoke refracted water and sunlight. The bouquet must remain physically plausible and commercially buildable. Present it on a simple pedestal against a dark neutral background with elegant directional studio lighting and crisp botanical detail. Avoid fantasy flower species and avoid excessive turquoise-dyed flowers.

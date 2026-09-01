@@ -32,6 +32,19 @@ A medium-to-large expressive bouquet built like a painting: a deep blue field of
 - **Density:** medium-dense at the core, open at the edges
 - **Design logic:** cobalt/indigo flowers = the night; cadmium-yellow cluster = the moon; scattered small yellow points = stars; curly willow and spiral stems = the brush-stroke swirl; teal organza = the cyan undertones; a thin solar-yellow ribbon = the halo glow
 
+## ↓ Floral Reality Check
+
+- **Color Feasibility**
+  - Cobalt / indigo night: **natural approximation** — deep-blue iris, blue delphinium, cornflower. True painterly cobalt does not exist as a flower color; the darkest blue weight is reinforced by deep navy wrapping rather than by dyed flowers.
+  - Cadmium yellow: **natural approximation** — bright-yellow ranunculus, lemon-yellow spray roses, yellow tulips. If a truer cadmium moon is essential, the yellow cluster may use a single `染色花材` (e.g. dyed yellow roses) and must be labeled — but the default is all-natural.
+  - Teal undertones: **material** — one layer of teal organza, not a flower.
+- **Material Translation**
+  - Swirl / brush strokes → curly willow line material + a spiral binding arrangement in `composition`, not painted petals.
+  - Moon glow and star halos → concentrated yellow focal cluster + scattered small yellow accents under directional `lighting`, with a fine gold-wire accent for starlight.
+  - Painterly texture → layered foliage and varied leaf forms; the render brief supplies the painterly light.
+- **Seasonal Availability** — iris (spring) and cornflower (summer) are seasonal; substitutes in the BOM (iris ↔ purple gladiolus; cornflower ↔ grape hyacinth). Yellow ranunculus is winter-spring; substitute yellow tulips or spray roses.
+- **Construction Feasibility** — medium-to-large spiral-built bouquet, ~36 stems; curly willow provides the outer swirl frame and is anchored into the binding point, not floating; stable and buildable.
+
 ## ↓ Flower BOM
 
 | 类别 | 花材名称 | 颜色 | 枝数/数量 | 角色/用途 | 是否染色 | 替代品种 |

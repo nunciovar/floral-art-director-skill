@@ -32,6 +32,18 @@ A medium, airy, asymmetrical bouquet. Pale mint and white create the luminous wa
 - **Density:** medium-low, breathing room throughout
 - **Design logic:** mint and pearl = the water field; a restrained sky-blue line = the image's focal anchor; transparent layers = refracted light
 
+## ↓ Floral Reality Check
+
+- **Color Feasibility**
+  - Mint / seafoam: **natural approximation** — pale green lisianthus, green carnation, grey-green eucalyptus (foliage). Exact turquoise does not exist in a natural flower, so the remainder lives in the wrapping.
+  - Pearl white: **natural flower color** — white phalaenopsis, white rose, white lisianthus.
+  - Saturated cyan-blue anchor: **natural approximation** — blue delphinium (natural); the stronger cyan is carried by ice-blue organza and wrapping film. **No `染色花材` required.**
+- **Material Translation**
+  - Translucency / refracted water → transparent high-gloss film + frosted mint wrapping + one layer of ice-blue organza. It is *not* represented by "translucent blue flowers".
+  - Floating / airiness → airy filler and fine line grass in `composition`; water-field highlight → pearl-white focal flowers under soft `lighting`.
+- **Seasonal Availability** — no strongly seasonal primary material; every substitute already listed in the BOM column (e.g. white lisianthus ↔ white spray rose, blue delphinium ↔ blue hydrangea).
+- **Construction Feasibility** — medium asymmetrical bouquet, ~25 stems anchored by eucalyptus structure, wrapped in 2–3 layers of paper with a clear film overwrap; stable and buildable by a working florist.
+
 ## ↓ Flower BOM
 
 | 类别 | 花材名称 | 颜色 | 枝数/数量 | 角色/用途 | 是否染色 | 替代品种 |

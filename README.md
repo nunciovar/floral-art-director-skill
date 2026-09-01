@@ -57,6 +57,31 @@ Image Generation Brief
 Rendered bouquet
 ```
 
+## Floral Reality Check
+
+The system does not only generate beautiful images. It evaluates whether the bouquet can exist in reality.
+
+Every design passes a mandatory **Floral Reality Check** before any flower is written into the BOM:
+
+```text
+Reference Image
+    ↓
+Visual Understanding
+    ↓
+Floral Reasoning
+    ↓
+Reality Validation
+    ↓
+Bouquet Design
+```
+
+Four checks are applied:
+
+- **Color Feasibility** — every color is classified as a *natural flower color*, an *approximation* carried by material, or a labeled *dyed flower*. No invented varieties.
+- **Material Translation** — visual effects are decomposed into `flower + material + lighting + composition`; translucency is never reduced to a flower color.
+- **Seasonal Availability** — strongly seasonal flowers always carry a substitute matched to their floral role.
+- **Construction Feasibility** — the bouquet is stable, proportionate, and buildable by a working florist.
+
 ## Repository structure
 
 ```text

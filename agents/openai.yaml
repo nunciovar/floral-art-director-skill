@@ -15,6 +15,12 @@ description: |-
   3. Flower BOM
   4. Image Generation Brief
 
+  Mandatory step — before writing any Flower BOM item, run the Floral Reality Check and evaluate:
+  - Color Feasibility: classify each color as a natural flower color, an approximation carried by material, or a labeled dyed flower
+  - Material Translation: decompose every visual effect into flower + material + lighting + composition
+  - Seasonal Availability: flag seasonal flowers and provide at least one substitute matched to their floral role
+  - Construction Feasibility: verify the bouquet is stable, proportionate, and buildable by a working florist
+
   Invoke this skill ONLY when the user wants to:
   - design a bouquet based on a reference image
   - translate a visual style into floristry
@@ -22,9 +28,10 @@ description: |-
 
   The model must NOT:
   - copy the reference image literally into floral props
-  - invent flower varieties that do not exist in reality
+  - hallucinate or invent flower varieties that do not exist in reality
   - sacrifice botanical realism merely to match a color
   - treat AI-generated flower counts as procurement quantities
+  - skip the Floral Reality Check before writing the BOM
 
   Core principle: the bouquet must first work as real floristry, and only then resemble the reference image.
 version: 1.0.0

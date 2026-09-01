@@ -32,6 +32,19 @@ A medium-to-large, lush-but-not-heavy romantic bouquet. Deep purple and blue cre
 - **Density:** medium, layered, with breathing room
 - **Design logic:** violet/blue mass = the dusk field; amber focal spray = the glowing lights; a touch of gold ribbon and wire = halation and starlight; dark foliage = the silhouetted palms
 
+## ↓ Floral Reality Check
+
+- **Color Feasibility**
+  - Deep violet / purple night: **natural flower color** — dark-purple lisianthus, violet lilac, pale lilac stock.
+  - The **deep blue background is not represented by flowers.** Full saturated blue in a flower would push toward dyed material; instead the night field is a **purple-dominant flower mass + dark navy matte packaging** carrying the blue weight.
+  - Amber-gold city lights: **natural approximation** — apricot/amber spray roses; the exact gold is a **material** detail (thin gold ribbon, restrained gold wire), not a flower color.
+- **Material Translation**
+  - Halation / glow of city lights → dark low-key background + soft directional `lighting` + one gold ribbon anchor, not "glowing flowers".
+  - Silhouetted palms → dark grey-blue eucalyptus as `foliage`.
+  - Starlight speckle → restrained fine gold-wire detail, one layer only.
+- **Seasonal Availability** — iris and delphinium are strongly seasonal; substitutes provided in the BOM (iris ↔ purple gladiolus; delphinium ↔ blue hydrangea).
+- **Construction Feasibility** — medium-to-large rounded airy bouquet, ~30 stems with delphinium as lifted line and eucalyptus as structure; matte wrap with a single ribbon; stable and buildable.
+
 ## ↓ Flower BOM
 
 | 类别 | 花材名称 | 颜色 | 枝数/数量 | 角色/用途 | 是否染色 | 替代品种 |

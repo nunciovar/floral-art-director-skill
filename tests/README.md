@@ -20,6 +20,7 @@ For each numbered test:
 | 03 | Seasonal flower (peony out of season) | Omitting substitutes for seasonal material |
 | 04 | Minimal style (quiet, sparse reference) | Over-stuffing the bouquet with flowers |
 | 05 | Luxury style (dark, gold-tinged reference) | Using cheap decorative clutter instead of quality |
+| 06 | Floral Reality Check (impossible blue, transparent petals, glow) | BOM written before reality validation; inventing impossible flowers |
 
 ## Shared pass criteria
 

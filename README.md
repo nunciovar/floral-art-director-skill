@@ -22,7 +22,7 @@ Real Bouquet Visualization
 
 The output is a two-level **Floral Design Presentation Package**:
 
-- **LEVEL 1 — Floral Design Board:** the design proposal (Reference Analysis, Style DNA, Visual Translation Logic, Floral Design Concept, Floral Reality Check, Flower BOM, Structural Sketch, Alternative Views).
+- **LEVEL 1 — Floral Design Board:** the design proposal (Reference Analysis, Style DNA, Visual Translation Logic, Floral Design Concept, Floral Reality Check, Flower BOM, Design Sketch, Alternative Angle View).
 - **LEVEL 2 — Final Bouquet Visualization:** the commercial bouquet as realistic product photography — no text, no labels, no diagrams.
 
 The **BOM, not the generated image, is the source of truth for construction and procurement.**
@@ -34,10 +34,26 @@ The default output is a complete presentation package with **five deliverables**
 1. **Reference Analysis** — color structure, light and shadow, texture, composition, emotional atmosphere
 2. **Style DNA** — 4–7 keywords that capture the reference's visual logic
 3. **Visual Translation Logic + Floral Design Concept** — every image feature mapped through `visual element → design language → floral language`, plus bouquet name, philosophy, structure, and emotion
-4. **Flower BOM** — procurement-level material table with exact quantities, colors, roles, and flower status (`natural` / `dyed` / `preserved` / `decorative material`), plus Structural Sketch and Alternative Views
+4. **Flower BOM** — procurement-level material table with exact quantities, colors, roles, flower status (`natural` / `dyed` / `preserved` / `decorative material`), and substitutes, plus Design Sketch and Alternative Angle View
 5. **Final Bouquet Visualization** — the LEVEL 2 product-photography image of the bouquet
 
 > **Case study:** the *Starry Night* walkthrough in [examples/starry-night-example.md](examples/starry-night-example.md) shows the full pipeline on Vincent van Gogh's painting — cobalt night becomes deep-blue iris and navy wrapping, the cadmium moon becomes a concentrated yellow ranunculus cluster, and the swirl becomes curly-willow line work. The same reference is used as an adversarial input in [tests/presentation-package-test.md](tests/presentation-package-test.md), which checks that the default output is the full two-level presentation package.
+
+## Presentation Structure
+
+This skill generates not only bouquet concepts, but complete floral art direction presentations.
+
+Every presentation contains:
+
+- **Style DNA** — 4–7 keywords that capture the reference's visual identity
+- **Visual Translation Logic** — why the bouquet matches the reference (element → interpretation → floral translation)
+- **Floral Reality Check** — color feasibility, material translation, seasonal availability, construction feasibility
+- **Flower BOM** — procurement table with quantity, color, role, status, and substitute
+- **Design Sketch** — florist-style structural sketch of the bouquet
+- **Alternative Angle View** — multiple bouquet views (2×2: front / 45° / side / detail)
+- **Final Bouquet** — standalone commercial product image
+
+The **output structure is fixed; the visual theme adapts** to the reference — the presentation style follows the reference's mood, palette, era, and artistic language, and is never locked to one theme (see SKILL.md → Visual Theme Adaptation).
 
 ## Features
 
@@ -46,6 +62,7 @@ The default output is a complete presentation package with **five deliverables**
 - **Two-level presentation package** — an 8-part Floral Design Board plus a clean product-photography Final Bouquet Visualization
 - **Realistic BOM generation** — every item quantified with role, color, flower status, and substitutes
 - **Feasibility checking** — real and sourceable material only; rare colors distributed across wrapping, foliage, and decoration before dyed flowers
+- **Locked structure, adaptive theme** — every presentation contains the same seven fixed components while the visual style follows the reference, never a forced black/black-gold theme
 - **Render brief** — the LEVEL 2 image brief is consistent with the BOM; the render is visualization only
 
 ## Design Philosophy
@@ -65,7 +82,7 @@ Floral Design Concept
     ↓
 Floral Reality Check
     ↓
-Flower BOM + Structural Sketch
+Flower BOM + Design Sketch
     ↓
 Presentation Package (LEVEL 1 board + LEVEL 2 visualization)
 ```
@@ -97,7 +114,7 @@ Four checks are applied:
 
 ## Image Generation Rules
 
-- **Design board (LEVEL 1):** editorial floral design board — premium floral studio presentation, dark elegant layout, typography, botanical photography, design notes.
+- **Design board (LEVEL 1):** editorial floral design board — premium floral studio presentation, typography, botanical photography, design notes. The layout theme adapts to the reference (see SKILL.md → Visual Theme Adaptation); dark elegant is only one possible style.
 - **Bouquet visualization (LEVEL 2):** realistic bouquet product photography — realistic flower texture, natural petals, physically possible bouquet, luxury florist catalog style.
 
 Keep the two styles separate: the board communicates the design; the final image sells the bouquet.
@@ -126,7 +143,8 @@ Keep the two styles separate: the board communicates the design; the final image
     ├── 04-minimal-style.md
     ├── 05-luxury-style.md
     ├── 06-floral-reality-check.md
-    └── presentation-package-test.md  # v0.2 presentation package test (Starry Night input)
+    ├── presentation-package-test.md  # v0.2 presentation package test (Starry Night input)
+    └── presentation-structure-test.md  # v0.3 presentation structure test (locked structure, adaptive theme)
 ```
 
 ## Suggested future extensions

@@ -9,7 +9,7 @@ description: |-
   - photographs
   - illustrations
 
-  Output (always produce the two-level Floral Design Presentation Package):
+  Output (always produce the two-level Floral Design Presentation Package, with a locked output structure and an adaptive visual theme):
   LEVEL 1 — Floral Design Board (all eight parts):
   1. Reference Analysis
   2. Style DNA
@@ -17,9 +17,13 @@ description: |-
   4. Floral Design Concept
   5. Floral Reality Check
   6. Flower BOM
-  7. Structural Sketch
-  8. Alternative Views
+  7. Design Sketch (florist-style structural sketch)
+  8. Alternative Angle View (2x2: front / 45 degree / side / detail)
   LEVEL 2 — Final Bouquet Visualization: realistic bouquet product photography, no text, no labels, no diagrams
+
+  Image Generation Brief: always produce TWO separate prompts — (A) Floral Presentation Board Prompt and (B) Final Bouquet Product Prompt.
+
+  The presentation theme must adapt to the reference (mood, palette, era, artistic language) — never force a fixed background color, accent color, or decorative style.
 
   Mandatory step — before writing any Flower BOM item, run the Floral Reality Check and evaluate:
   - Color Feasibility: classify each color as a natural flower color, an approximation carried by material, or a labeled dyed flower

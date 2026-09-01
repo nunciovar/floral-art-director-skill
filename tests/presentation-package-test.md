@@ -17,9 +17,9 @@ The response is a complete **LEVEL 1 Floral Design Board** containing all eight 
 3. **Visual Translation Logic** — every major element mapped as `visual element → design language → floral language` (e.g. *dark night sky → deep spatial background → dark wrapping and foliage*; *golden stars → energy points → yellow focal flowers*)
 4. **Floral Design Concept** — bouquet name, design philosophy, structure, emotional expression
 5. **Floral Reality Check** — all four answers: Color Feasibility, Material Translation, Seasonal Availability, Construction Feasibility
-6. **Flower BOM** — a procurement-level table in the format `|Flower/Material|Quantity|Color|Role|Status|`, every item quantified, each with a valid flower status (`natural` / `dyed` / `preserved` / `decorative material`), plus substitutes for seasonal material
-7. **Structural Sketch** — flower position, height hierarchy, focal/supporting/line flowers, wrapping
-8. **Alternative Views** — at least three views (front, side, detail)
+6. **Flower BOM** — a procurement-level table in the format `| Flower / Material | Quantity | Color | Role | Status | Substitute |`, every item quantified, each with a valid flower status (`natural` / `dyed` / `preserved` / `decorative material`), plus seasonal alternatives identified
+7. **Design Sketch** — florist-style structural sketch: flower position, height hierarchy, focal/supporting/line flowers, wrapping
+8. **Alternative Angle View** — multiple views (recommended 2×2: front, 45 degree, side, detail)
 
 The response also contains a **LEVEL 2 Final Bouquet Visualization**:
 
@@ -33,8 +33,8 @@ The response also contains a **LEVEL 2 Final Bouquet Visualization**:
 |---|---|---|
 | 1 | Style DNA | 4–7 keywords present in LEVEL 1 |
 | 2 | Translation Logic | `element → design language → floral language` mapping present; cobalt night → dark wrapping/foliage, not "blue flowers" |
-| 3 | BOM | table format `|Flower/Material|Quantity|Color|Role|Status|`; exact quantities; valid flower status per item; seasonal substitutes present |
-| 4 | Structural Sketch | present with position + height hierarchy + focal + wrapping |
+| 3 | BOM | table format `| Flower / Material | Quantity | Color | Role | Status | Substitute |`; exact quantities; valid flower status per item; seasonal alternatives identified |
+| 4 | Design Sketch | present with bouquet outline + height hierarchy + focal position + wrapping |
 | 5 | Final Bouquet Image | LEVEL 2 image exists and is clean product photography — no text/labels/diagrams |
 
 ## Failure mode

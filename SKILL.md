@@ -91,18 +91,22 @@ Every BOM item must be quantified. "Some flowers" is not a BOM.
 
 Also list wrapping and auxiliary materials with quantities.
 
-### 7. Structural Sketch
-Describe the bouquet's structure so it can be built:
+### 7. Design Sketch
+Generate a florist-style structural sketch of the bouquet — a professional florist design drawing, not an engineering CAD diagram:
 - flower position (focal, supporting, line, filler)
 - height hierarchy
-- focal flower
-- supporting flowers
-- line flowers
+- bouquet outline
+- flower hierarchy
+- focal flower position
+- line flower direction
+- foliage structure
+- spatial relationship
 - wrapping
 
-### 8. Alternative Views
-Describe at least three distinct views for the visualization stage:
+### 8. Alternative Angle View
+Generate multiple bouquet views to show structure consistency. Recommended 2×2 layout:
 - front view
+- 45 degree view
 - side view
 - detail view (e.g. a close focal flower, the binding point, or a wrapping fold)
 
@@ -160,18 +164,20 @@ Answer all four questions:
 #### 6. Flower BOM
 Procurement-level material table:
 
-`|Flower/Material|Quantity|Color|Role|Status|`
+`| Flower / Material | Quantity | Color | Role | Status | Substitute |`
 
+- real, commercially available flowers only
 - every flower has an exact quantity
 - no "some flowers"
 - no invented flowers
 - dyed material is marked `dyed flower`
+- seasonal alternatives are identified in the Substitute column
 
-#### 7. Structural Sketch
-Flower position · height hierarchy · focal flower · supporting flowers · line flowers · wrapping.
+#### 7. Design Sketch
+Florist-style structural drawing (not CAD): bouquet outline · flower hierarchy · focal flower position · line flower direction · foliage structure · spatial relationship · wrapping.
 
-#### 8. Alternative Views
-At least three angles: front view · side view · detail view.
+#### 8. Alternative Angle View
+Multiple views showing structure consistency. Recommended 2×2 layout: front view · 45 degree view · side view · detail view.
 
 ### LEVEL 2 — Final Bouquet Visualization
 
@@ -186,6 +192,186 @@ Generate the final commercial bouquet as a standalone image, separate from the d
 **Only show:** bouquet · flowers · wrapping · realistic lighting.
 
 **Photography style:** professional floral photography, luxury florist catalog style.
+
+## Presentation Structure System
+
+The skill generates a complete floral art direction presentation board. **The output structure is fixed; the visual theme is adaptive.** This chapter locks the information architecture — the modules, their order, and the floral design logic — while the presentation style follows the reference image.
+
+The seven fixed components below must always be present. The LEVEL 1 design board (see Required Output) additionally retains **Reference Analysis** and **Floral Design Concept** as its opening modules; they feed the Style DNA and the board's design narrative.
+
+### Purpose
+
+The skill should generate a complete floral art direction presentation board.
+
+The output should feel like:
+- premium florist proposal
+- editorial floral design sheet
+- art direction board
+
+It should NOT feel like:
+- generic infographic
+- business dashboard
+- engineering report
+
+### Fixed Output Components
+
+Every complete generation should contain:
+
+#### 1. Style DNA
+
+Purpose: translate the visual identity of the reference image.
+
+Include:
+- dominant colors
+- supporting colors
+- brightness
+- saturation
+- temperature
+- lighting
+- texture
+- emotion
+
+Provide 4-7 keywords.
+
+#### 2. Visual Translation Logic
+
+Show:
+
+```text
+Reference Element
+    ↓
+Visual Interpretation
+    ↓
+Floral Translation
+```
+
+Examples:
+- Ocean color → calm transparency → blue hydrangea + delphinium
+- Eye highlight → amber emotional focal point → orange tulip + warm accent flowers
+
+This section should visually explain why the bouquet design matches the reference.
+
+#### 3. Floral Reality Check
+
+Keep this module. Evaluate:
+- Color feasibility
+- Material translation
+- Seasonal availability
+- Construction feasibility
+
+Purpose: ensure the artistic design can become a real bouquet.
+
+#### 4. Flower BOM
+
+Must remain procurement-oriented. Use table format:
+
+`| Flower / Material | Quantity | Color | Role | Status | Substitute |`
+
+Rules:
+- real commercially available flowers
+- exact quantity
+- identify dyed flowers
+- identify seasonal alternatives
+
+#### 5. Design Sketch
+
+Generate a florist-style structural sketch.
+
+Requirements:
+- bouquet outline
+- flower hierarchy
+- focal flower position
+- line flower direction
+- foliage structure
+- spatial relationship
+
+It should resemble a professional florist design drawing — NOT an engineering CAD diagram.
+
+#### 6. Alternative Angle View
+
+Generate multiple bouquet views.
+
+Recommended 2×2 layout:
+- front view
+- 45 degree view
+- side view
+- detail view
+
+Purpose: show bouquet structure consistency.
+
+#### 7. Final Bouquet
+
+Generate a standalone product image.
+
+Requirements:
+- bouquet only
+- realistic flower texture
+- commercial photography quality
+- independent from the presentation board
+
+This image represents the final product.
+
+## Presentation Layout Priority
+
+The presentation board should prioritize:
+
+1. **Hero Bouquet Image** — largest visual element
+2. **Reference Image** — visual source
+3. **Style DNA**
+4. **Translation Logic**
+5. **BOM**
+6. **Design Sketch**
+7. **Alternative Views**
+
+The bouquet should remain the emotional center. Do not allow text modules to dominate the image.
+
+## Visual Theme Adaptation
+
+The presentation style must follow the reference image.
+
+The system must NOT force a fixed:
+- background color
+- accent color
+- typography color
+- decorative style
+
+Instead, analyze:
+- mood
+- palette
+- era
+- artistic language
+
+and adapt the presentation.
+
+Examples:
+- Dark cinematic photo → dark background → dramatic lighting
+- Pastel painting → soft background → gentle editorial layout
+- Minimal monochrome → clean monochrome presentation
+
+## Image Generation Brief
+
+Every design is delivered as **two separate prompts**.
+
+### A. Floral Presentation Board Prompt
+
+Describes the board itself:
+- overall board layout
+- reference panel
+- Style DNA panel
+- BOM panel
+- sketch panel
+- alternative views
+
+### B. Final Bouquet Product Prompt
+
+Describes only the bouquet:
+- bouquet only
+- realistic photography
+- lighting
+- camera
+- material
+
+Prompt A drives the LEVEL 1 board presentation; prompt B drives the LEVEL 2 Final Bouquet Visualization.
 
 ## Floral Reality Check
 
@@ -241,7 +427,7 @@ Avoid putting the entire color-matching burden on flowers.
 
 ## Image Generation Rules
 
-- **Design board (LEVEL 1):** editorial floral design board — premium floral studio presentation, dark elegant layout, typography, botanical photography, design notes.
+- **Design board (LEVEL 1):** editorial floral design board — premium floral studio presentation, typography, botanical photography, design notes. The layout theme adapts to the reference (see Visual Theme Adaptation); dark elegant is only one possible style.
 - **Bouquet visualization (LEVEL 2):** realistic bouquet product photography — realistic flower texture, natural petals, physically possible bouquet, luxury florist catalog style.
 
 Keep the two styles separate: the board communicates the design; the final image sells the bouquet.
@@ -260,6 +446,8 @@ Before finalizing, check:
 - Does the LEVEL 1 design board contain all eight parts?
 - Does the LEVEL 2 visualization contain no text, labels, or diagrams?
 - Is the render brief consistent with the BOM and design concept?
+- Is the output structure fixed (all seven Presentation Structure components) while the visual theme adapts to the reference — no forced black background, fixed accent color, or PPT style?
+- Does the Image Generation Brief contain both prompts (A. board, B. bouquet product)?
 
 If any answer is no, revise before presenting the result.
 
@@ -273,6 +461,8 @@ If any answer is no, revise before presenting the result.
 - **Skipping the Reality Check:** writing a BOM before proving the design can exist in reality.
 - **Bouquet-only output:** showing only the image without the design board.
 - **Impossible structures:** proposing a bouquet no florist can build.
+- **Fixed theme lock:** forcing the same presentation theme (black background, orange-gold accent) on every reference instead of adapting the style.
+- **Text-heavy board:** letting text modules dominate the board instead of keeping the bouquet the emotional center.
 
 ## Forbidden
 1. **Directly copying reference elements** into flowers. Translate through design language instead: *wrong* "blue sky → blue flowers"; *correct* "blue sky → spatial atmosphere → blue wrapping + blue/purple flowers".

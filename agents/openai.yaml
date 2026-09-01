@@ -9,11 +9,17 @@ description: |-
   - photographs
   - illustrations
 
-  Output (always produce these four sections, in this fixed order):
-  1. Style DNA
-  2. Floral Design Concept
-  3. Flower BOM
-  4. Image Generation Brief
+  Output (always produce the two-level Floral Design Presentation Package):
+  LEVEL 1 — Floral Design Board (all eight parts):
+  1. Reference Analysis
+  2. Style DNA
+  3. Visual Translation Logic (element → design language → floral language)
+  4. Floral Design Concept
+  5. Floral Reality Check
+  6. Flower BOM
+  7. Structural Sketch
+  8. Alternative Views
+  LEVEL 2 — Final Bouquet Visualization: realistic bouquet product photography, no text, no labels, no diagrams
 
   Mandatory step — before writing any Flower BOM item, run the Floral Reality Check and evaluate:
   - Color Feasibility: classify each color as a natural flower color, an approximation carried by material, or a labeled dyed flower
@@ -33,8 +39,8 @@ description: |-
   - treat AI-generated flower counts as procurement quantities
   - skip the Floral Reality Check before writing the BOM
 
-  Core principle: the bouquet must first work as real floristry, and only then resemble the reference image.
-version: 1.0.0
+  Core principle: the bouquet must first exist as a real floral artwork, and then resemble the reference image.
+version: 1.1.0
 interface:
   display_name: Floral Art Director
   short_description: Translate a reference image's visual language, palette, mood, and composition into a realistic, buildable floral bouquet design.
@@ -54,9 +60,14 @@ knowledge:
   include: []
   exclude: []
 metadata:
-  purpose: translate visual language into realistic floral design
+  purpose: translate visual language into professional, manufacturable floral artworks
   output_sections:
+  - reference-analysis
   - style-dna
+  - visual-translation-logic
   - floral-design-concept
+  - floral-reality-check
   - flower-bom
-  - image-generation-brief
+  - structural-sketch
+  - alternative-views
+  - final-bouquet-visualization

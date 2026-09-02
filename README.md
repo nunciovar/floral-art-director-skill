@@ -127,6 +127,18 @@ Four checks are applied:
 
 Keep the two styles separate: the board communicates the design; the final image sells the piece.
 
+## Example Gallery
+
+Each visual case owns an independent namespace under `assets/images/…` and is documented by exactly one example page — a new reference is always added as a sibling case and never reuses or replaces another case's image.
+
+### Amber Within / 琥珀之心
+
+Conceptual photography translated into an asymmetric cinematic floral design.
+
+![Amber Within](assets/images/case_eye_amber/design_board.png)
+
+[View full case study](examples/eye-amber-example.md)
+
 ## Repository structure
 
 ```text
@@ -136,12 +148,17 @@ Keep the two styles separate: the board communicates the design; the final image
 ├── agents/
 │   └── openai.yaml              # OpenAI Agent Skill configuration
 ├── assets/
-│   └── icon.svg
+│   ├── icon.svg
+│   └── images/                  # Case showcase images — one namespace per case
+│       ├── case_starry_night/        # Starry Night final bouquet
+│       ├── case_arrangement_formats/ # Vase + Vessel format board (Starry Night)
+│       └── case_eye_amber/           # Amber Within design board (eye case)
 ├── examples/                    # Example gallery — see README.md
 │   ├── README.md
 │   ├── 01-aquatic-mint.md
 │   ├── 02-la-la-land.md
 │   ├── 03-starry-night.md
+│   ├── eye-amber-example.md     # Amber Within case study (monochrome eye)
 │   └── starry-night-example.md  # v0.2 full pipeline case study (Starry Night)
 └── tests/                       # Benchmark test suite — see README.md
     ├── README.md

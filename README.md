@@ -131,9 +131,25 @@ Keep the two styles separate: the board communicates the design; the final image
 
 Each visual case owns an independent namespace under `assets/images/…` and is documented by exactly one example page — a new reference is always added as a sibling case and never reuses or replaces another case's image.
 
+### Starry Night / 星空漩涡
+
+Van Gogh's painterly cobalt-and-yellow night sky translated into a real, buildable bouquet.
+
+![Starry Night final bouquet](assets/images/case_starry_night/final_bouquet.png)
+
+[View full case study](examples/03-starry-night.md)
+
+### Starry Night — Vase & Vessel Formats
+
+The same reference re-delivered independently in the Vase Arrangement and Vessel Arrangement formats (Floral Format Selection).
+
+![Starry Night vase and vessel arrangement design board](assets/images/case_arrangement_formats/vase_vessel_design_board.png)
+
+[View full case study](examples/03-starry-night.md)
+
 ### Amber Within / 琥珀之心
 
-Conceptual photography translated into an asymmetric cinematic floral design.
+Conceptual photography (a monochrome eye with an amber pupil) translated into an asymmetric cinematic floral design.
 
 ![Amber Within](assets/images/case_eye_amber/design_board.png)
 

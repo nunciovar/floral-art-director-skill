@@ -42,7 +42,7 @@ The default output is a complete presentation package with **six deliverables**:
 5. **Flower BOM** — procurement-level material table with exact quantities, colors, roles, flower status (`natural` / `dyed` / `preserved` / `decorative material`), and substitutes, plus Design Sketch and Alternative Angle View
 6. **Final Floral Piece Visualization** — the LEVEL 2 product-photography image of each selected format (Final Bouquet, Vase Arrangement Final Render, Vessel Arrangement Final Render, or Installation Final Render)
 
-> **Case study:** the *Starry Night* walkthrough in [examples/starry-night-example.md](examples/starry-night-example.md) shows the full pipeline on Vincent van Gogh's painting — cobalt night becomes deep-blue iris and navy wrapping, the cadmium moon becomes a concentrated yellow ranunculus cluster, and the swirl becomes curly-willow line work. The same reference is used as an adversarial input in [tests/presentation-package-test.md](tests/presentation-package-test.md), which checks that the default output is the full two-level presentation package.
+> **Case study:** the *Starry Night* case in [examples/03-starry-night.md](examples/03-starry-night.md) walks the full pipeline on Vincent van Gogh's painting — cobalt night becomes deep-blue iris and navy wrapping, the cadmium moon becomes a concentrated yellow ranunculus cluster, and the swirl becomes curly-willow line work. The same reference is used as an adversarial input in [tests/presentation-package-test.md](tests/presentation-package-test.md), which checks that the default output is the full two-level presentation package.
 
 ## Presentation Structure
 
@@ -174,8 +174,7 @@ Conceptual photography (a monochrome eye with an amber pupil) translated into an
 │   ├── 01-aquatic-mint.md
 │   ├── 02-la-la-land.md
 │   ├── 03-starry-night.md
-│   ├── eye-amber-example.md     # Amber Within case study (monochrome eye)
-│   └── starry-night-example.md  # v0.2 full pipeline case study (Starry Night)
+│   └── eye-amber-example.md     # Amber Within case study (monochrome eye)
 └── tests/                       # Benchmark test suite — see README.md
     ├── README.md
     ├── 01-color-overfitting.md

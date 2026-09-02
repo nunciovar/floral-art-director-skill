@@ -2,7 +2,7 @@
 
 ## Reference Image
 
-Vincent van Gogh's *The Starry Night*: a swirling cobalt-and-indigo night sky with broad painterly brush strokes, a glowing cadmium-yellow crescent moon and star halos, teal-cyan undertones in the sky, and a dark rolling village silhouette at the bottom. The colors are deliberately non-realistic and the composition is full of motion and energy.
+Vincent van Gogh, *The Starry Night* (1889): a swirling cobalt-and-indigo night sky with broad painterly brush strokes, a glowing cadmium-yellow crescent moon and star halos, teal-cyan undertones in the sky, and a dark rolling village silhouette at the bottom. The colors are deliberately non-realistic and the composition is full of motion and energy; the true subject is **motion and inner light**.
 
 ## ↓ Style DNA
 
@@ -30,7 +30,7 @@ A medium-to-large expressive bouquet built like a painting: a deep blue field of
 - **Size:** medium-to-large
 - **Silhouette:** swirling, asymmetrical, lifted line work
 - **Density:** medium-dense at the core, open at the edges
-- **Design logic:** cobalt/indigo flowers = the night; cadmium-yellow cluster = the moon; scattered small yellow points = stars; curly willow and spiral stems = the brush-stroke swirl; teal organza = the cyan undertones; a thin solar-yellow ribbon = the halo glow
+- **Design logic:** cobalt/indigo flowers = the night; cadmium-yellow cluster = the moon; scattered small yellow points = stars; curly willow and spiral stems = the brush-stroke swirl; teal organza = the cyan undertones; a thin solar-yellow ribbon = the halo glow; dark eucalyptus at the base = the village silhouette grounding the whole piece
 
 ## ↓ Floral Reality Check
 

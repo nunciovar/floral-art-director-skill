@@ -67,3 +67,17 @@ A medium-to-large expressive bouquet built like a painting: a deep blue field of
 ## ↓ Image Generation Brief
 
 Generate a premium florist-portfolio still-life photograph of a medium-to-large expressive bouquet in a deep cobalt-blue palette with a concentrated bright cadmium-yellow focal cluster and scattered small yellow accents. Feature realistic deep-blue iris, blue hydrangea, delphinium, cornflower, bright-yellow ranunculus, and lemon-yellow spray roses, with curling willow as dynamic line material that reads as swirling brush strokes. Wrap in deep navy paper with a teal organza layer and a single solar-yellow ribbon. Dark studio background with directional light that creates a moon-glow on the yellow cluster. Keep the flowers physically plausible and commercially buildable; the *painterly* quality comes from arrangement and line, not from impossible blue or yellow flower varieties.
+
+---
+
+## Final Bouquet Image
+
+A showcase render of this case produced by the skill:
+
+![Starry Night final bouquet](../assets/images/case_starry_night/final_bouquet.png)
+
+## The Same Reference in Other Formats
+
+Floral Format Selection re-delivers the same *Starry Night* reference independently in the Vase Arrangement and Vessel Arrangement formats — its own arrangement design board, tuned to spatial display rather than hand-tied wrapping:
+
+![Starry Night vase and vessel arrangement design board](../assets/images/case_arrangement_formats/vase_vessel_design_board.png)

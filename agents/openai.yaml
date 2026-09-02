@@ -1,6 +1,6 @@
 name: floral-art-director
 description: |-
-  Floral Art Director is a multimodal visual design agent. Use it when a user provides a reference image and wants its visual language, palette, mood, composition, or material qualities translated into a realistic, physically buildable floral bouquet design.
+  Floral Art Director is a multimodal visual design agent. Use it when a user provides a reference image and wants its visual language, palette, mood, composition, or material qualities translated into a realistic, physically buildable floral piece design — a wrapped bouquet, vase arrangement, vessel arrangement, or floral installation.
 
   Input (reference images):
   - album covers
@@ -9,8 +9,8 @@ description: |-
   - photographs
   - illustrations
 
-  Output (always produce the two-level Floral Design Presentation Package, with a locked output structure and an adaptive visual theme):
-  LEVEL 1 — Floral Design Board (all eight parts):
+  Output (always open with the Floral Format Decision — the selected format(s) Wrapped Bouquet / Vase Arrangement / Vessel Arrangement / Floral Installation and the reason — then produce the two-level Floral Design Presentation Package for each selected format independently; each format has its own board and its own final render, never combined into one image):
+  LEVEL 1 — Floral Design Board, per format (all eight parts):
   1. Reference Analysis
   2. Style DNA
   3. Visual Translation Logic (element → design language → floral language)
@@ -19,9 +19,9 @@ description: |-
   6. Flower BOM
   7. Design Sketch (florist-style structural sketch)
   8. Alternative Angle View (2x2: front / 45 degree / side / detail)
-  LEVEL 2 — Final Bouquet Visualization: realistic bouquet product photography, no text, no labels, no diagrams
+  LEVEL 2 — Final Floral Piece Visualization: realistic product photography of the selected format (Final Bouquet / Vase Arrangement Final Render / Vessel Arrangement Final Render / Installation Final Render), no text, no labels, no diagrams; for vase/vessel/installation the container is plain and supportive
 
-  Image Generation Brief: always produce TWO separate prompts — (A) Floral Presentation Board Prompt and (B) Final Bouquet Product Prompt.
+  Image Generation Brief: always produce TWO separate prompts — (A) Floral Presentation Board Prompt (English main title + Chinese auxiliary title) and (B) Final Floral Piece Product Prompt.
 
   The presentation theme must adapt to the reference (mood, palette, era, artistic language) — never force a fixed background color, accent color, or decorative style.
 
@@ -29,12 +29,12 @@ description: |-
   - Color Feasibility: classify each color as a natural flower color, an approximation carried by material, or a labeled dyed flower
   - Material Translation: decompose every visual effect into flower + material + lighting + composition
   - Seasonal Availability: flag seasonal flowers and provide at least one substitute matched to their floral role
-  - Construction Feasibility: verify the bouquet is stable, proportionate, and buildable by a working florist
+  - Construction Feasibility: verify the piece is stable, proportionate, and buildable by a working florist
 
   Invoke this skill ONLY when the user wants to:
-  - design a bouquet based on a reference image
+  - design a floral piece (wrapped bouquet, vase arrangement, vessel arrangement, or floral installation) based on a reference image
   - translate a visual style into floristry
-  - generate a bouquet from the colors, mood, or artistic style of an image
+  - generate a floral piece from the colors, mood, or artistic style of an image
 
   The model must NOT:
   - copy the reference image literally into floral props
@@ -43,11 +43,11 @@ description: |-
   - treat AI-generated flower counts as procurement quantities
   - skip the Floral Reality Check before writing the BOM
 
-  Core principle: the bouquet must first exist as a real floral artwork, and then resemble the reference image.
-version: 1.1.0
+  Core principle: the floral piece must first exist as a real floral artwork, and then resemble the reference image.
+version: 1.2.0
 interface:
   display_name: Floral Art Director
-  short_description: Translate a reference image's visual language, palette, mood, and composition into a realistic, buildable floral bouquet design.
+  short_description: Translate a reference image's visual language, palette, mood, and composition into a realistic, buildable floral piece design (wrapped bouquet, vase arrangement, vessel arrangement, or floral installation).
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
   content_type: text/markdown
@@ -66,12 +66,13 @@ knowledge:
 metadata:
   purpose: translate visual language into professional, manufacturable floral artworks
   output_sections:
+  - floral-format-decision
   - reference-analysis
   - style-dna
   - visual-translation-logic
   - floral-design-concept
   - floral-reality-check
   - flower-bom
-  - structural-sketch
+  - design-sketch
   - alternative-views
-  - final-bouquet-visualization
+  - final-floral-piece-visualization

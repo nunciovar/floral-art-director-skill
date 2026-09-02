@@ -7,7 +7,7 @@ This directory is a quality-evaluation system for the Floral Art Director skill.
 For each numbered test:
 
 1. Feed the **Input Scenario** to the skill as the user prompt (the reference image is described textually; use any equivalent real image with the same visual language).
-2. Run the skill end-to-end. Since v0.3 the default output is the two-level **Floral Design Presentation Package** with a **locked output structure** (seven fixed components — see the Presentation Structure System in SKILL.md) and an **adaptive visual theme**: LEVEL 1 Floral Design Board (all eight parts) → LEVEL 2 Final Bouquet Visualization.
+2. Run the skill end-to-end. Since v0.3 the default output is the two-level **Floral Design Presentation Package** with a **locked output structure** (seven fixed components — see the Presentation Structure System in SKILL.md) and an **adaptive visual theme**; since v0.4 the package opens with the **Floral Format Decision** and each selected format is delivered as its own LEVEL 1 Floral Design Board (all eight parts) → LEVEL 2 Final Floral Piece Visualization.
 3. Score the response against **Expected Behavior**.
 4. If the response exhibits any item under **Failure Mode**, the test fails — record which failure mode(s) fired.
 
@@ -28,7 +28,7 @@ For each numbered test:
 
 A response passes *any* test only when it satisfies **all** of these:
 
-- Produces the two-level presentation package: a LEVEL 1 Floral Design Board containing all eight parts (Reference Analysis, Style DNA, Visual Translation Logic, Floral Design Concept, Floral Reality Check, Flower BOM, Design Sketch, Alternative Angle View) and, for the final bouquet, a LEVEL 2 visualization image with **no text, labels, or diagrams**.
+- Produces the two-level presentation package: a LEVEL 1 Floral Design Board containing all eight parts (Reference Analysis, Style DNA, Visual Translation Logic, Floral Design Concept, Floral Reality Check, Flower BOM, Design Sketch, Alternative Angle View) and, for each selected format, a LEVEL 2 Final Floral Piece Visualization image with **no text, labels, or diagrams**.
 - Uses only real, sourceable botanical material — **no invented varieties**.
 - Every BOM item is quantified with an exact stem count or quantity and carries a valid flower status (`natural` / `dyed` / `preserved` / `decorative material`).
 - Rare or hard-to-source colors are handled through **materials first** (foliage, wrapping, ribbon, translucent film, restrained decoration), then dyed flowers only as a last resort, and dyed material is explicitly labeled `染色花材`.

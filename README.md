@@ -1,10 +1,10 @@
 # Floral Art Director Skill
 
-A reusable agent skill for translating the visual language of an album cover, painting, film still, photograph, illustration, or personal image into **professional, manufacturable floral artworks** — delivered as a complete design presentation package plus a realistic bouquet visualization.
+A reusable agent skill for translating the visual language of an album cover, painting, film still, photograph, illustration, or personal image into **professional, manufacturable floral artworks** — delivered as a complete design presentation package plus a realistic final floral piece (wrapped bouquet, vase arrangement, vessel arrangement, or floral installation).
 
 ## What is Floral Art Director
 
-Floral Art Director is **not an image generator**. It is a design engine that inserts a real floristry layer between a reference image and a bouquet. Instead of copying what it sees, it reasons about what the image *means*, translates it through design language into floral language, and builds a bouquet that could actually be made by a florist:
+Floral Art Director is **not an image generator**. It is a design engine that inserts a real floristry layer between a reference image and a floral piece. Instead of copying what it sees, it reasons about what the image *means*, translates it through design language into floral language, decides the format the reference calls for — wrapped bouquet, vase arrangement, vessel arrangement, or floral installation — and builds a piece that could actually be made by a florist:
 
 ```text
 Reference Image
@@ -15,27 +15,32 @@ Floral Translation
     ↓
 Professional Floral Design
     ↓
+Floral Format Selection
+    ↓
 Presentation Package
     ↓
-Real Bouquet Visualization
+Final Floral Piece Visualization
 ```
 
 The output is a two-level **Floral Design Presentation Package**:
 
-- **LEVEL 1 — Floral Design Board:** the design proposal (Reference Analysis, Style DNA, Visual Translation Logic, Floral Design Concept, Floral Reality Check, Flower BOM, Design Sketch, Alternative Angle View).
-- **LEVEL 2 — Final Bouquet Visualization:** the commercial bouquet as realistic product photography — no text, no labels, no diagrams.
+- **LEVEL 1 — Floral Design Board:** the design proposal, produced per format (Reference Analysis, Style DNA, Visual Translation Logic, Floral Design Concept, Floral Reality Check, Flower BOM, Design Sketch, Alternative Angle View).
+- **LEVEL 2 — Final Floral Piece Visualization:** the selected format — wrapped bouquet, vase arrangement, vessel arrangement, or floral installation — as realistic product photography — no text, no labels, no diagrams.
+
+Supports four floral formats — **Wrapped Bouquet / Vase Arrangement / Vessel Arrangement / Floral Installation** — and each selected format is delivered independently, never combined into one image.
 
 The **BOM, not the generated image, is the source of truth for construction and procurement.**
 
 ## Output
 
-The default output is a complete presentation package with **five deliverables**:
+The default output is a complete presentation package with **six deliverables**:
 
-1. **Reference Analysis** — color structure, light and shadow, texture, composition, emotional atmosphere
-2. **Style DNA** — 4–7 keywords that capture the reference's visual logic
-3. **Visual Translation Logic + Floral Design Concept** — every image feature mapped through `visual element → design language → floral language`, plus bouquet name, philosophy, structure, and emotion
-4. **Flower BOM** — procurement-level material table with exact quantities, colors, roles, flower status (`natural` / `dyed` / `preserved` / `decorative material`), and substitutes, plus Design Sketch and Alternative Angle View
-5. **Final Bouquet Visualization** — the LEVEL 2 product-photography image of the bouquet
+1. **Floral Format Decision** — the selected format(s) — Wrapped Bouquet / Vase Arrangement / Vessel Arrangement / Floral Installation — and the reason drawn from the reference's visual language, spatial relationships, emotional expression, and usage scenario
+2. **Reference Analysis** — color structure, light and shadow, texture, composition, emotional atmosphere
+3. **Style DNA** — 4–7 keywords that capture the reference's visual logic
+4. **Visual Translation Logic + Floral Design Concept** — every image feature mapped through `visual element → design language → floral language`, plus piece name, philosophy, structure, and emotion
+5. **Flower BOM** — procurement-level material table with exact quantities, colors, roles, flower status (`natural` / `dyed` / `preserved` / `decorative material`), and substitutes, plus Design Sketch and Alternative Angle View
+6. **Final Floral Piece Visualization** — the LEVEL 2 product-photography image of each selected format (Final Bouquet, Vase Arrangement Final Render, Vessel Arrangement Final Render, or Installation Final Render)
 
 > **Case study:** the *Starry Night* walkthrough in [examples/starry-night-example.md](examples/starry-night-example.md) shows the full pipeline on Vincent van Gogh's painting — cobalt night becomes deep-blue iris and navy wrapping, the cadmium moon becomes a concentrated yellow ranunculus cluster, and the swirl becomes curly-willow line work. The same reference is used as an adversarial input in [tests/presentation-package-test.md](tests/presentation-package-test.md), which checks that the default output is the full two-level presentation package.
 
@@ -43,23 +48,24 @@ The default output is a complete presentation package with **five deliverables**
 
 This skill generates not only bouquet concepts, but complete floral art direction presentations.
 
-Every presentation contains:
+Every presentation opens with the **Floral Format Decision**, then delivers each selected format as its own independent board + render. Each board contains:
 
 - **Style DNA** — 4–7 keywords that capture the reference's visual identity
-- **Visual Translation Logic** — why the bouquet matches the reference (element → interpretation → floral translation)
+- **Visual Translation Logic** — why the piece matches the reference (element → interpretation → floral translation)
 - **Floral Reality Check** — color feasibility, material translation, seasonal availability, construction feasibility
 - **Flower BOM** — procurement table with quantity, color, role, status, and substitute
-- **Design Sketch** — florist-style structural sketch of the bouquet
-- **Alternative Angle View** — multiple bouquet views (2×2: front / 45° / side / detail)
-- **Final Bouquet** — standalone commercial product image
+- **Design Sketch** — florist-style structural sketch of the piece
+- **Alternative Angle View** — multiple views of the piece (2×2: front / 45° / side / detail)
+- **Final Floral Piece** — standalone commercial product image of the selected format
 
 The **output structure is fixed; the visual theme adapts** to the reference — the presentation style follows the reference's mood, palette, era, and artistic language, and is never locked to one theme (see SKILL.md → Visual Theme Adaptation).
 
 ## Features
 
 - **Visual Language Analysis** — analyzes color structure, brightness, saturation, light, texture, composition, and mood into 4–7 Style DNA keywords
+- **Four floral formats** — Wrapped Bouquet / Vase Arrangement / Vessel Arrangement / Floral Installation; the AI auto-decides the format(s) from the reference's visual language, spatial relationships, emotional expression, and usage scenario, and each selected format gets its own board + final render, never combined into one image
 - **Floral Translation** — maps image features (color, line, haze, mass, negative space, gloss) into floral language through a design-language step
-- **Two-level presentation package** — an 8-part Floral Design Board plus a clean product-photography Final Bouquet Visualization
+- **Two-level presentation package** — an 8-part Floral Design Board (per selected format) plus a clean product-photography Final Floral Piece Visualization
 - **Realistic BOM generation** — every item quantified with role, color, flower status, and substitutes
 - **Feasibility checking** — real and sourceable material only; rare colors distributed across wrapping, foliage, and decoration before dyed flowers
 - **Locked structure, adaptive theme** — every presentation contains the same seven fixed components while the visual style follows the reference, never a forced black/black-gold theme
@@ -67,7 +73,7 @@ The **output structure is fixed; the visual theme adapts** to the reference — 
 
 ## Design Philosophy
 
-> **The bouquet must first exist as a real floral artwork, and then resemble the reference image.**
+> **The floral piece must first exist as a real floral artwork, and then resemble the reference image.**
 
 A direct image-to-image workflow often creates visually attractive but unrealistic flowers or colors. This skill inserts a floral-design layer between image analysis and rendering:
 
@@ -80,16 +86,18 @@ Floral Translation
     ↓
 Floral Design Concept
     ↓
+Floral Format Selection (Wrapped / Vase / Vessel / Installation)
+    ↓
 Floral Reality Check
     ↓
 Flower BOM + Design Sketch
     ↓
-Presentation Package (LEVEL 1 board + LEVEL 2 visualization)
+Presentation Package (LEVEL 1 board + LEVEL 2 visualization, per format)
 ```
 
 ## Floral Reality Check
 
-The system does not only generate beautiful images. It evaluates whether the bouquet can exist in reality.
+The system does not only generate beautiful images. It evaluates whether the floral piece can exist in reality.
 
 Every design passes a mandatory **Floral Reality Check** before any flower is written into the BOM:
 
@@ -102,7 +110,7 @@ Floral Reasoning
     ↓
 Reality Validation
     ↓
-Bouquet Design
+Floral Design
 ```
 
 Four checks are applied:
@@ -110,14 +118,14 @@ Four checks are applied:
 - **Color Feasibility** — every color is classified as a *natural flower color*, an *approximation* carried by material, or a labeled *dyed flower*. No invented varieties.
 - **Material Translation** — visual effects are decomposed into `flower + material + lighting + composition`; translucency is never reduced to a flower color.
 - **Seasonal Availability** — strongly seasonal flowers always carry a substitute matched to their floral role.
-- **Construction Feasibility** — the bouquet is stable, proportionate, and buildable by a working florist.
+- **Construction Feasibility** — the piece is stable, proportionate, and buildable by a working florist.
 
 ## Image Generation Rules
 
-- **Design board (LEVEL 1):** editorial floral design board — premium floral studio presentation, typography, botanical photography, design notes. The layout theme adapts to the reference (see SKILL.md → Visual Theme Adaptation); dark elegant is only one possible style.
-- **Bouquet visualization (LEVEL 2):** realistic bouquet product photography — realistic flower texture, natural petals, physically possible bouquet, luxury florist catalog style.
+- **Design board (LEVEL 1):** editorial floral design board — premium magazine layout, modular cards, bilingual titles (English main title + Chinese auxiliary title), botanical photography, design notes. The layout theme adapts to the reference (see SKILL.md → Presentation Board Style and Visual Theme Adaptation); dark elegant is the default but never the only possible style.
+- **Final floral piece (LEVEL 2):** realistic product photography of the selected format — realistic flower texture, natural petals, physically possible piece, plain supportive container or wrapping, luxury florist catalog style.
 
-Keep the two styles separate: the board communicates the design; the final image sells the bouquet.
+Keep the two styles separate: the board communicates the design; the final image sells the piece.
 
 ## Repository structure
 
@@ -153,5 +161,5 @@ Keep the two styles separate: the board communicates the design; the final image
 - seasonality database
 - florist substitutions by budget
 - structured JSON output for web/API use
-- interactive controls for realism, budget, bouquet size, dye tolerance, and decorative elements
-- automated presentation-package renderer (design board → final bouquet image)
+- interactive controls for realism, budget, piece size, dye tolerance, and decorative elements
+- automated presentation-package renderer (design board → final floral piece image)

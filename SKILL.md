@@ -1,6 +1,6 @@
 ---
 name: floral-art-director
-description: Use when a user provides a reference image — album cover, painting, movie still, photograph, illustration, or personal image — and wants its visual language translated into a professional, manufacturable floral artwork, delivered as a full design presentation package plus a realistic bouquet visualization.
+description: Use when a user provides a reference image — album cover, painting, movie still, photograph, illustration, or personal image — and wants its visual language translated into a professional, manufacturable floral artwork, delivered as a full design presentation package plus a realistic final floral piece (wrapped bouquet, vase arrangement, vessel arrangement, or floral installation).
 ---
 
 # Floral Art Director
@@ -8,12 +8,14 @@ description: Use when a user provides a reference image — album cover, paintin
 ## Overview
 An AI floral design system that translates visual references into **professional, manufacturable floral artworks**.
 
-**The bouquet must first exist as a real floral artwork, and then resemble the reference image.**
+**The floral piece must first exist as a real floral artwork, and then resemble the reference image.**
+
+The system spans **multiple floral formats**: Wrapped Bouquet（手绑花束）· Vase Arrangement（瓶插花艺）· Vessel Arrangement（盆器插花）· Floral Installation（艺术花艺装置）.
 
 ## When to Use
 Use for album covers, paintings, film stills, photographs, illustrations, or personal images when the user wants a professional floral artwork derived from the image's mood, palette, light, texture, or composition.
 
-Do not use this skill merely to identify flowers already visible in an image, or to copy literal objects from the reference into a bouquet.
+Do not use this skill merely to identify flowers already visible in an image, or to copy literal objects from the reference into a floral piece.
 
 ## Core Workflow — Floral Design Studio
 
@@ -28,7 +30,7 @@ Professional Floral Design
     ↓
 Presentation Package
     ↓
-Real Bouquet Visualization
+Final Floral Piece Visualization
 ```
 
 ### 1. Visual Language Analysis
@@ -64,19 +66,22 @@ Summarize the reference in 4–7 concise keywords describing atmosphere, color b
 
 Examples: `Aquatic · Mint · Translucent · Floating · Serene · Sunlit`.
 
-### 4. Floral Design Concept
-Describe the intended bouquet before any flower is chosen:
-- bouquet name
+### 4. Floral Format Selection
+After the Style DNA, decide the floral format that best matches the reference's visual language, spatial relationships, emotional expression, and intended usage scenario — see the dedicated [Floral Format Selection](#floral-format-selection) chapter. Choose **one or more** of: Wrapped Bouquet · Vase Arrangement · Vessel Arrangement · Floral Installation. Record the choice and its reasoning in the [Floral Format Decision](#floral-format-decision).
+
+### 5. Floral Design Concept
+Describe the intended floral piece (in its selected format) before any flower is chosen:
+- piece name (format-aware)
 - design philosophy
-- bouquet structure (silhouette, density, size)
+- structure (silhouette, density, size) — adapted to the selected format
 - emotional expression
 
-If the user gives no budget, recipient, or size, assume a medium-budget, medium-size gift bouquet.
+If the user gives no budget, recipient, or size, assume a medium-budget, medium-size piece appropriate to the selected format.
 
-### 5. Floral Reality Check
+### 6. Floral Reality Check
 **Mandatory step.** Run before writing any BOM item. Complete all four checks in the dedicated [Floral Reality Check](#floral-reality-check) chapter: Color Feasibility, Material Translation, Seasonal Availability, Construction Feasibility.
 
-### 6. Flower BOM
+### 7. Flower BOM
 The BOM is the source of truth for real construction and procurement, and must be independent from any rendered image.
 
 For every floral material include:
@@ -89,13 +94,13 @@ For every floral material include:
 
 Every BOM item must be quantified. "Some flowers" is not a BOM.
 
-Also list wrapping and auxiliary materials with quantities.
+Also list wrapping (for a bouquet), the container (for vase/vessel/installation), and auxiliary materials with quantities.
 
-### 7. Design Sketch
-Generate a florist-style structural sketch of the bouquet — a professional florist design drawing, not an engineering CAD diagram:
+### 8. Design Sketch
+Generate a florist-style structural sketch of the floral piece in its selected format — a professional florist design drawing, not an engineering CAD diagram:
 - flower position (focal, supporting, line, filler)
 - height hierarchy
-- bouquet outline
+- piece outline
 - flower hierarchy
 - focal flower position
 - line flower direction
@@ -103,16 +108,74 @@ Generate a florist-style structural sketch of the bouquet — a professional flo
 - spatial relationship
 - wrapping
 
-### 8. Alternative Angle View
-Generate multiple bouquet views to show structure consistency. Recommended 2×2 layout:
+### 9. Alternative Angle View
+Generate multiple views of the piece to show structure consistency. Recommended 2×2 layout:
 - front view
 - 45 degree view
 - side view
 - detail view (e.g. a close focal flower, the binding point, or a wrapping fold)
 
+## Floral Format Selection
+
+After the Style DNA, the AI must automatically decide the floral format that best fits the reference's visual language, spatial relationships, emotional expression, and intended usage scenario. One or more formats may be selected. Record the decision in the Floral Format Decision.
+
+### 1. Wrapped Bouquet（手绑花束）
+The classic hand-tied bouquet.
+
+Suitable for:
+- gift-giving scenarios
+- a strong central visual focus
+- presentation through wrapping
+
+Design focus:
+- bouquet outline
+- wrapping material
+- flower layering and hierarchy
+- handheld visual proportion
+
+### 2. Vase Arrangement（瓶插花艺）
+Suitable for:
+- spatial display
+- home and interior
+- tabletop art
+
+Design focus:
+- the container must never steal the visual center from the flowers
+- prefer: transparent glass bottles · plain ceramic bottles · linen-textured containers · plain stone vessels
+- forbid: luxurious decorated vases · complex-texture containers · overly artistic containers
+
+Principle: **Container supports flowers, not competes with flowers.**
+
+### 3. Vessel Arrangement（盆器插花）
+Suitable for:
+- Eastern flower arranging
+- art installations
+- horizontal spatial expression
+
+Design focus:
+- a low, plain basin or vessel
+- emphasize the spatial relationships of the flowers
+- emphasize branch direction and line flow
+- emphasize negative space（留白）
+
+Recommended containers: plain clay pots · concrete pots · shallow stone basins · matte black pots.
+
+Forbidden: overly decorative containers.
+
+### 4. Floral Installation（艺术花艺装置）
+Suitable for:
+- exhibitions
+- concept design
+- large-scale expression
+
+Design focus:
+- scale, spatial presence, and the reference's concept
+- structural mounting must be realistically buildable by a working florist
+- every material must be obtainable — nothing floats unsupported
+
 ## Required Output — Floral Design Presentation Package
 
-The default output is a complete presentation package in two levels. **LEVEL 1 is the design proposal; LEVEL 2 is the final commercial bouquet visualization.**
+The default output is a complete presentation package in two levels, produced **for each selected floral format** (see [Floral Format Selection](#floral-format-selection)). **LEVEL 1 is the per-format design board; LEVEL 2 is the per-format final render** — the final piece may be a wrapped bouquet, vase arrangement, vessel arrangement, or floral installation, not necessarily a bouquet. The package opens with the Floral Format Decision and delivers each selected format independently.
 
 ### LEVEL 1 — Floral Design Board
 
@@ -149,9 +212,9 @@ Yellow focal flowers
 ```
 
 #### 4. Floral Design Concept
-- Bouquet name
+- Piece name (format-aware)
 - Design philosophy
-- Bouquet structure
+- Structure (silhouette, density, size) — adapted to the selected format
 - Emotional expression
 
 #### 5. Floral Reality Check
@@ -159,7 +222,7 @@ Answer all four questions:
 - **Color Feasibility** — can this color be achieved with real flower material?
 - **Material Translation** — where a color or effect cannot be achieved by flowers, state the exact channel: `wrapping`, `foliage`, `lighting`, or `accessory`.
 - **Seasonal Availability** — list the seasonal flowers and their substitutes.
-- **Construction Feasibility** — bouquet size, structure, manufacturability.
+- **Construction Feasibility** — piece size, structure, manufacturability.
 
 #### 6. Flower BOM
 Procurement-level material table:
@@ -174,30 +237,63 @@ Procurement-level material table:
 - seasonal alternatives are identified in the Substitute column
 
 #### 7. Design Sketch
-Florist-style structural drawing (not CAD): bouquet outline · flower hierarchy · focal flower position · line flower direction · foliage structure · spatial relationship · wrapping.
+Florist-style structural drawing (not CAD): piece outline · flower hierarchy · focal flower position · line flower direction · foliage structure · spatial relationship · wrapping (bouquet), container and waterline (vase), or horizontal spread and negative space (vessel).
 
 #### 8. Alternative Angle View
 Multiple views showing structure consistency. Recommended 2×2 layout: front view · 45 degree view · side view · detail view.
 
-### LEVEL 2 — Final Bouquet Visualization
+### LEVEL 2 — Final Floral Piece Visualization
 
-Generate the final commercial bouquet as a standalone image, separate from the design board.
+Generate the final floral piece (wrapped bouquet, vase arrangement, vessel arrangement, or installation) as a standalone image, separate from its design board. Name it by format: **Final Bouquet**, **Vase Arrangement Final Render**, **Vessel Arrangement Final Render**, or **Installation Final Render**.
 
 **Requirements:**
-- must look like real flower-shop product photography
-- realistic flower texture, natural petals, physically possible bouquet
+- must look like real product photography for the chosen format
+- realistic flower texture, natural petals and material, physically possible arrangement
+- the container (if any) supports the flowers, never competes with them
 
 **Forbidden in this image:** text · infographic · tables · labels · diagrams · color palettes.
 
-**Only show:** bouquet · flowers · wrapping · realistic lighting.
+**Only show:** the piece — flowers, and the container or wrapping the format uses · realistic lighting.
 
 **Photography style:** professional floral photography, luxury florist catalog style.
+
+## Floral Format Decision
+
+The final design plan must open with the format decision.
+
+### Selected Format
+(choose one or more)
+- Wrapped Bouquet（手绑花束）
+- Vase Arrangement（瓶插花艺）
+- Vessel Arrangement（盆器插花）
+- Floral Installation（艺术花艺装置）
+
+### Reason
+Explain why the selected format(s) best match the reference's:
+- visual language
+- spatial relationships
+- emotional expression
+- usage scenario
+
+### Format-Specific Deliverables
+
+Each selected format is delivered **independently** — its own design board and its own final render.
+
+- **Wrapped Bouquet** → Bouquet Design Board + Final Bouquet
+- **Vase Arrangement** → Vase Arrangement Design Board + Vase Arrangement Final Render
+- **Vessel Arrangement** → Vessel Arrangement Design Board + Vessel Arrangement Final Render
+- **Floral Installation** → Floral Installation Design Board + Floral Installation Final Render
+
+Each design board carries the fixed components (Style DNA, Visual Translation Logic, Floral Reality Check, Flower BOM, Design Sketch, Alternative Angle View) tuned to that format. Each final render is a standalone product image of that format.
+
+❌ **Forbidden:** combining bouquet + vase + vessel (or any formats) into one horizontal display image.
+✅ **Required:** each selected format shown independently, never mixed in a single frame.
 
 ## Presentation Structure System
 
 The skill generates a complete floral art direction presentation board. **The output structure is fixed; the visual theme is adaptive.** This chapter locks the information architecture — the modules, their order, and the floral design logic — while the presentation style follows the reference image.
 
-The seven fixed components below must always be present. The LEVEL 1 design board (see Required Output) additionally retains **Reference Analysis** and **Floral Design Concept** as its opening modules; they feed the Style DNA and the board's design narrative.
+The seven fixed components below must be present in **every format-specific design board**. The LEVEL 1 design board (see Required Output) additionally retains **Reference Analysis** and **Floral Design Concept** as its opening modules; they feed the Style DNA and the board's design narrative.
 
 ### Purpose
 
@@ -249,7 +345,7 @@ Examples:
 - Ocean color → calm transparency → blue hydrangea + delphinium
 - Eye highlight → amber emotional focal point → orange tulip + warm accent flowers
 
-This section should visually explain why the bouquet design matches the reference.
+This section should visually explain why the design matches the reference.
 
 #### 3. Floral Reality Check
 
@@ -259,7 +355,7 @@ Keep this module. Evaluate:
 - Seasonal availability
 - Construction feasibility
 
-Purpose: ensure the artistic design can become a real bouquet.
+Purpose: ensure the artistic design can become a real floral piece in its selected format.
 
 #### 4. Flower BOM
 
@@ -278,7 +374,7 @@ Rules:
 Generate a florist-style structural sketch.
 
 Requirements:
-- bouquet outline
+- piece outline
 - flower hierarchy
 - focal flower position
 - line flower direction
@@ -289,7 +385,7 @@ It should resemble a professional florist design drawing — NOT an engineering 
 
 #### 6. Alternative Angle View
 
-Generate multiple bouquet views.
+Generate multiple views of the piece.
 
 Recommended 2×2 layout:
 - front view
@@ -297,14 +393,14 @@ Recommended 2×2 layout:
 - side view
 - detail view
 
-Purpose: show bouquet structure consistency.
+Purpose: show structure consistency of the piece.
 
-#### 7. Final Bouquet
+#### 7. Final Floral Piece
 
-Generate a standalone product image.
+Generate a standalone final image of the selected floral format — wrapped bouquet, vase arrangement, vessel arrangement, or floral installation (not necessarily a bouquet).
 
 Requirements:
-- bouquet only
+- the selected piece only
 - realistic flower texture
 - commercial photography quality
 - independent from the presentation board
@@ -315,7 +411,7 @@ This image represents the final product.
 
 The presentation board should prioritize:
 
-1. **Hero Bouquet Image** — largest visual element
+1. **Hero Image of the Piece** — largest visual element
 2. **Reference Image** — visual source
 3. **Style DNA**
 4. **Translation Logic**
@@ -323,7 +419,7 @@ The presentation board should prioritize:
 6. **Design Sketch**
 7. **Alternative Views**
 
-The bouquet should remain the emotional center. Do not allow text modules to dominate the image.
+The floral piece should remain the emotional center. Do not allow text modules to dominate the image.
 
 ## Visual Theme Adaptation
 
@@ -348,6 +444,21 @@ Examples:
 - Pastel painting → soft background → gentle editorial layout
 - Minimal monochrome → clean monochrome presentation
 
+## Presentation Board Style
+
+Every format-specific design board is built in the same premium art-direction language — the modules vary by format, the visual quality never degrades.
+
+- **Premium magazine feel** — editorial layouts, refined typography hierarchy, generous breathing space; each module sits on a modular card with clear spatial separation
+- **Hero visual** — the board opens with the piece (or its reference) as the dominant image
+- **Bilingual titles** — an **English main title** with a **Chinese auxiliary title（中文辅助标题）** beneath it
+- **Art-direction modules** — Style DNA, Visual Translation Logic, Floral Reality Check, Flower BOM, Design Sketch line art, Alternative Angle View rendered as designed panels, never as raw lists
+- **Tone** — a restrained dark ground is the default premium board base; the tone may soften or shift to follow the reference's mood, palette, and era (see Visual Theme Adaptation). Do not force a background that fights the reference.
+
+Never degrade the board to:
+- a generic PPT slide
+- an e-commerce detail page
+- a bare collection of AI-generated images
+
 ## Image Generation Brief
 
 Every design is delivered as **two separate prompts**.
@@ -356,26 +467,28 @@ Every design is delivered as **two separate prompts**.
 
 Describes the board itself:
 - overall board layout
+- format-titled board (English main title + Chinese auxiliary title)
 - reference panel
 - Style DNA panel
 - BOM panel
 - sketch panel
 - alternative views
 
-### B. Final Bouquet Product Prompt
+### B. Final Floral Piece Product Prompt
 
-Describes only the bouquet:
-- bouquet only
+Describes only the selected piece (wrapped bouquet, vase arrangement, vessel arrangement, or floral installation):
+- the selected piece only
+- for vase/vessel/installation, the container is present but plain and supportive
 - realistic photography
 - lighting
 - camera
 - material
 
-Prompt A drives the LEVEL 1 board presentation; prompt B drives the LEVEL 2 Final Bouquet Visualization.
+Prompt A drives the LEVEL 1 board presentation; prompt B drives the LEVEL 2 Final Floral Piece Visualization.
 
 ## Floral Reality Check
 
-The system does not only generate beautiful images — it evaluates whether the bouquet can exist in reality. No BOM item may be written until all four checks pass.
+The system does not only generate beautiful images — it evaluates whether the piece can exist in reality. No BOM item may be written until all four checks pass.
 
 ### 1. Color Feasibility
 For every color that matters in the design, classify it as exactly one of:
@@ -408,8 +521,8 @@ For any strongly seasonal flower:
 - if the risk is high, name the substitute as the primary choice and the seasonal flower as the occasional upgrade
 
 ### 4. Construction Feasibility
-Check the bouquet as a physical object:
-- **bouquet stability** — the structure can be bound and held; line material is anchored, not floating
+Check the piece as a physical object:
+- **structural stability** — the structure can be bound, held, or mounted; line material is anchored, not floating
 - **flower proportion** — stem counts and sizes fit the declared silhouette and density; no mathematically impossible composition
 - **realistic florist workflow** — every material can be sourced, cut, and assembled by a working florist; no element requires fabrication that does not exist
 
@@ -427,14 +540,14 @@ Avoid putting the entire color-matching burden on flowers.
 
 ## Image Generation Rules
 
-- **Design board (LEVEL 1):** editorial floral design board — premium floral studio presentation, typography, botanical photography, design notes. The layout theme adapts to the reference (see Visual Theme Adaptation); dark elegant is only one possible style.
-- **Bouquet visualization (LEVEL 2):** realistic bouquet product photography — realistic flower texture, natural petals, physically possible bouquet, luxury florist catalog style.
+- **Design board (LEVEL 1):** editorial floral design board — premium magazine layout, modular cards, bilingual titles, botanical photography, design notes, hero visual. Built in the board style described in Presentation Board Style; its tone adapts to the reference (see Visual Theme Adaptation); dark elegant is the default but never the only possible style.
+- **Final floral piece (LEVEL 2):** realistic product photography of the selected format — realistic flower texture, natural petals, physically possible piece, plain supportive container or wrapping, luxury florist catalog style.
 
-Keep the two styles separate: the board communicates the design; the final image sells the bouquet.
+Keep the two styles separate: the board communicates the design; the final image sells the piece.
 
 ## Quality Gate
 Before finalizing, check:
-- Does the bouquet work as real floristry without the reference image?
+- Does the piece work as real floristry without the reference image?
 - Was the **Floral Reality Check** completed for all four parts before the BOM?
 - Is every Visual Translation Logic entry honest (`element → design language → floral language`)?
 - Is the palette traceable to the source image?
@@ -447,26 +560,36 @@ Before finalizing, check:
 - Does the LEVEL 2 visualization contain no text, labels, or diagrams?
 - Is the render brief consistent with the BOM and design concept?
 - Is the output structure fixed (all seven Presentation Structure components) while the visual theme adapts to the reference — no forced black background, fixed accent color, or PPT style?
-- Does the Image Generation Brief contain both prompts (A. board, B. bouquet product)?
+- Does the Image Generation Brief contain both prompts (A. board, B. final floral piece product)?
+- Does the package open with the **Floral Format Decision** (Selected Format + Reason)?
+- Is every selected format delivered **independently** — its own design board and its own final render — never combined into one image?
+- Does each final render match its selected format (vase → Vase Arrangement Final Render; vessel → Vessel Arrangement Final Render)?
+- Does every design board keep the premium art-direction style (magazine layout, modular cards, bilingual titles) — no PPT, e-commerce detail page, or AI-image gallery look?
 
 If any answer is no, revise before presenting the result.
 
 ## Common Mistakes
 - **Literal copying:** turning pictured objects into floral props instead of translating visual language ("blue sky → blue flowers").
 - **Color overfitting:** forcing impossible flower colors instead of using material and packaging.
-- **Render-first design:** generating a beautiful picture before defining a buildable bouquet.
+- **Render-first design:** generating a beautiful picture before defining a buildable piece.
 - **Fake precision:** treating generated flower counts as procurement truth.
 - **Too many focal flowers:** losing hierarchy and visual rhythm.
 - **Decoration overload:** butterflies, feathers, acrylic, or pearls should support the concept rather than become the concept.
 - **Skipping the Reality Check:** writing a BOM before proving the design can exist in reality.
 - **Bouquet-only output:** showing only the image without the design board.
-- **Impossible structures:** proposing a bouquet no florist can build.
+- **Impossible structures:** proposing a piece no florist can build.
+- **Wrong format:** defaulting to a bouquet when the reference's spatial language calls for a vase, vessel, or installation.
+- **Mixing formats in one image:** combining bouquet + vase + vessel in a single frame instead of delivering each format independently.
+- **Container competing with flowers:** a decorated or artistic vase/vessel stealing the visual center from the arrangement.
+- **Board degradation:** letting the board collapse into a PPT slide, an e-commerce detail page, or a bare collection of AI images.
 - **Fixed theme lock:** forcing the same presentation theme (black background, orange-gold accent) on every reference instead of adapting the style.
-- **Text-heavy board:** letting text modules dominate the board instead of keeping the bouquet the emotional center.
+- **Text-heavy board:** letting text modules dominate the board instead of keeping the piece the emotional center.
 
 ## Forbidden
 1. **Directly copying reference elements** into flowers. Translate through design language instead: *wrong* "blue sky → blue flowers"; *correct* "blue sky → spatial atmosphere → blue wrapping + blue/purple flowers".
 2. **Generating fantasy plants** — inventing flowers that do not exist.
 3. **Forcing a color** with a flower that does not exist in reality.
-4. **Outputting only a bouquet image** — the presentation package (LEVEL 1) is mandatory.
-5. **Outputting impossible structures** — a bouquet that cannot be made by a working florist.
+4. **Outputting only a floral piece image** — the presentation package (LEVEL 1) is mandatory.
+5. **Outputting impossible structures** — a piece that cannot be made by a working florist.
+6. **Combining floral formats in one display** — bouquet + vase + vessel (or any formats) in a single horizontal image; each selected format must be shown in its own independent board and render.
+7. **Letting the container compete with the flowers** — for vase and vessel arrangements, the container must stay plain and supportive; it supports the flowers, never competes with them.

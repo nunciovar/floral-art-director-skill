@@ -1,4 +1,4 @@
-# Example 04 — Amber Within / 琥珀之心
+# Example 04 — Amber Within
 
 ## Reference Image
 

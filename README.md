@@ -153,7 +153,7 @@ Conceptual photography (a monochrome eye with an amber pupil) translated into an
 
 ![Amber Within](assets/images/case_eye_amber/design_board.png)
 
-[View full case study](examples/eye-amber-example.md)
+[View full case study](examples/04-amber-within.md)
 
 ## Repository structure
 
@@ -174,7 +174,7 @@ Conceptual photography (a monochrome eye with an amber pupil) translated into an
 │   ├── 01-aquatic-mint.md
 │   ├── 02-la-la-land.md
 │   ├── 03-starry-night.md
-│   └── eye-amber-example.md     # Amber Within case study (monochrome eye)
+│   └── 04-amber-within.md       # Amber Within case study (monochrome eye)
 └── tests/                       # Benchmark test suite — see README.md
     ├── README.md
     ├── 01-color-overfitting.md
